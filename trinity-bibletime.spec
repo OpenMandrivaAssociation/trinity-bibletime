@@ -20,7 +20,7 @@
 
 Name:			trinity-%{tde_pkg}
 Version:		1.6.6.0
-Release:		%{?tde_version:%{tde_version}_}3
+Release:		%{?tde_version:%{tde_version}_}4
 Summary:		A bible study tool for Trinity
 Group:			Applications/Utilities
 URL:			http://www.trinitydesktop.org/
@@ -43,7 +43,6 @@ BuildOption:    -DWITH_GCC_VISIBILITY=%{!?with_clang:ON}%{?with_clang:OFF}
 BuildRequires:	trinity-tdelibs-devel >= %{tde_version}
 BuildRequires:	trinity-tdebase-devel >= %{tde_version}
 BuildRequires:  trinity-tde-cmake >= %{tde_version}
-BuildRequires:  tqt3-dev-tools
 
 %{!?with_clang:BuildRequires:	gcc-c++}
 
